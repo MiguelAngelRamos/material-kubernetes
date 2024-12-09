@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: production
+data:
+  # Agrega aquí tus configuraciones de la aplicación si es necesario
+  # Por ejemplo:
+  # LOG_LEVEL: "INFO"
