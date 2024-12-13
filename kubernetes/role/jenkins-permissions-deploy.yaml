@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: production
+  name: jenkins-role
+rules:
+  - apiGroups: ["apps"] # Permisos sobre el grupo "apps"
+    resources: ["deployments"]
+    verbs: ["get", "list", "create", "update", "patch", "delete"]
+  - apiGroups: [""] # Permisos sobre recursos básicos (por ejemplo, pods)
+    resources: ["pods"]
+    verbs: ["get", "list", "watch"]

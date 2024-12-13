@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: user-service
-        image: mramoscli/user-service:latest  # Reemplaza "<tu_usuario_docker>" con tu usuario de Docker Hub
+        image: mramoscli/user-service-2:latest  # Reemplaza "<tu_usuario_docker>" con tu usuario de Docker Hub
         ports:
         - containerPort: 8080
         env:

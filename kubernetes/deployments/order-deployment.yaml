@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: order-service
-        image: mramoscli/order-service:latest  # Reemplaza "<tu_usuario_docker>" con tu usuario de Docker Hub
+        image: mramoscli/order-service-2:latest  # Reemplaza "<tu_usuario_docker>" con tu usuario de Docker Hub
         ports:
         - containerPort: 8081
         env:
