@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: jenkins-deployment-binding
+  namespace: production
+subjects:
+- kind: ServiceAccount
+  name: jenkins
+  namespace: production
+roleRef:
+  kind: Role
+  name: jenkins-deployment-role
+  apiGroup: rbac.authorization.k8s.io
